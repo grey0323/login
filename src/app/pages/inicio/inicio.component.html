@@ -6,6 +6,35 @@
         </mat-card-header>
 
         <mat-card-content>
+            <div id="contenedor" class="card">
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Marca</th>
+                            <th scope="col">Precio</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            @for (item of listaProducto; track $index) {
+                                <tr>
+                                    <th scope="row">{{item.idProducto}}</th>
+                                    <td>{{item.nombre}}</td>
+                                    <td>{{item.marca}}</td>
+                                    <td>{{item.precio}}</td>
+                                  </tr>
+
+                            }
+                          
+                          
+                        </tbody>
+                      </table>
+                </div>
+
+            </div>
+            
 
         </mat-card-content>
         
